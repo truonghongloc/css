@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    font: 14px ariel;
+}
+body {
+    min-height: 1200px;
+    background-image: url(../image/bg-top.jpg), url(../image/bg-bottom.jpg);
+    background-repeat: no-repeat;
+    background-size: 1590px auto;
+    background-position: top center, bottom center;
+}
+.clearfix{
+    clear: both;
+}
+.full-container{
+    width: 100%;
+}
+a {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+/* header-menu */
+.header-menu{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.header-menu .nav{
+    display: flex;
+    align-items: center;
+}
+.menu-right{
+    margin-left: 270px;
+}
+.nav>li>a{
+    padding: 40px;
+}
+.nav>li+li{
+    border-left: solid white 1px ;
+}
+.nav>li:hover{
+    opacity: 0.6;
+}
+.menu-left>li:last-child{
+    border-width: 0 1px 0 1px;
+    border-style: solid;
+    border-color: white;
+}
+.menu-right>li:first-child{
+    border-width: 0 1px 0 1px;
+    border-style: solid;
+    border-color: white;
+}
+/* banner */
+.banner div{
+    border: solid 1px red;
+}
+.banner{
+    display: grid;
+    width: 1200px;
+    height: 330px;
+    margin: 0 auto;
+    margin-top: 580px;
+    position: relative;
+    grid-template-columns: 300px auto 285px;
+    gap: 5px;
+    background-color: #112141;
+    border: solid 5px #112141;
+}
+.long-den{
+    position: absolute;
+    top: 0;
+    left: -80px;
+}
+.banner-left{
+    display: grid;
+    grid-template-rows: 155px auto 80px;
+}
+.banner-left>.item-1{
+    display: block;
+    width: 300px;
+    height: 155px;
+    background-image: url('../image/btn_taigame.jpg');
+    background-repeat: no-repeat;
+    background-size: 300px 155px;
+}
+.banner-left>.item-2{
+    display: block;
+    width: 300px;
+    height: 95px;
+    background-size: 300px 95px;
+    background-image: url('../image/buttons-left-new-2.png');
+    background-repeat: no-repeat;
+}
+.banner-left>.item-2:hover{
+    background-image: url('../image/buttons-left-new-3.png');
+    background-size: 300px 95px;
+    display: block;
+}
+.banner-left>.item-3{
+    display: block;
+    width: 300px;
+    height: 75px;
+    background-image: url('../image/buttons-left-new-4.png');
+    background-size: 300px 75px;
+}
+.banner-left>.item-3:hover{
+    display: block;
+    width: 300px;
+    height: 75px;
+    background-image: url('../image/buttons-left-new-5.png');
+    background-size: 300px 75px;
+}
+.banner-center{
+    background-image: url('../image/slider-02.gif');
+    background-size: 615px auto;
+    background-repeat: no-repeat;
+}
+.banner-right{
+    position: relative;
+    display: grid;
+    grid-template-columns: 136px 136;
+    grid-template-rows: 127px 127px auto;
+    gap: 5px;
+}
+.banner-right>.item-9{
+    grid-column: 1/3;
+}
+.banner-right>.item-5{
+    background-image: url('../image/buttons-right-1.png');
+    background-size: 136px 127px;
+}
+.banner-right>.item-6{
+    background-image: url('../image/buttons-right-2.png');
+    background-size: 136px 127px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 136px;
+    height: 127px;
+    z-index: 999;
+}
+.banner-right>.item-7{
+    background-image: url('../image/buttons-right-3.png');
+    background-size: 136px 127px;
+}
+.banner-right>.item-8{
+    background-image: url('../image/buttons-right-4.png');
+    background-size: 136px 127px;
+}
+.banner-right>.item-9{
+    background-image: url('../image/hotline.png');
+    background-repeat: no-repeat;
+    background-size: 300px 60px;
+}
